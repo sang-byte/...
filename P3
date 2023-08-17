@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    // Printing the block 'F'
+    printf("#####\n");
+    printf("#\n");
+    printf("#\n");
+    printf("#####\n");
+    printf("#\n");
+    printf("#\n\n");
+    
+    // Printing the big 'C'
+    printf("  ####\n");
+    printf("##    \n");
+    printf("#     \n");
+    printf("#     \n");
+    printf("##    \n");
+    printf("  ####\n");
+    
+    return 0;
+}
