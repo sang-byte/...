@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    char characters[] = {'X', 'M', 'L'};
+    int length = sizeof(characters) / sizeof(char);
+
+    for (int i = length - 1; i >= 0; i--) {
+        printf("%c ", characters[i]);
+    }
+
+    return 0;
+}
