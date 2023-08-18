@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int myInt=2;
+    float myFloat=3.14;
+    char myChar='S';
+    long int myLongint=456;
+    unsigned long int myUnsignedlongint=98;
+    printf("intger:%d\n",myInt);
+    printf("float:%f\n",myFloat);
+    printf("character:%c\n",myChar);
+    printf("longint:%ld\n",myLongint);
+    printf("unsignedlongint:%lu\n",myUnsignedlongint);
+    return 0;
+}
