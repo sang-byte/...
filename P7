@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+#ifdef a 
+    #define GREETING "Hi"
+#else
+    #define GREETING "Bye"
+#endif
+
+int main() {
+
+    printf("%s\n", GREETING);
+    return 0;
+}
