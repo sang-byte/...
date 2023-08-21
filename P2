@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+void printSentence(char sentence[]) {
+    printf("%s\n", sentence);
+}
+
+int main() {
+    char sentence[] = "Hello, world!";
+    printSentence(sentence);
+    
+    return 0;
+}
