@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+
+int main() {
+  int num = 42;
+  float pi = 3.14;
+  char letter = 'A';
+  char name[] = "Sangeetha";
+
+  printf("Integer: %d\n", num);
+  printf("Float: %.2f\n", pi);
+  printf("Character: %c\n", letter);
+  printf("String: %s\n", name);
+
+  return 0;
+}
