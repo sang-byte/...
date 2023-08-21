@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    char uppercase = 'A';
+    char lowercase = uppercase + 32;
+    
+    printf("%c\n", lowercase);
+    
+    return 0;
+}
