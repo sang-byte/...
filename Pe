@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    int ascii_value = 65;
+    char character = (char) ascii_value;
+    printf("%c\n", character);
+    
+    return 0;
+}
