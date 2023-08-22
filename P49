@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    char organization[100];
+
+    printf("organization_name: ");
+    scanf("%s", organization);
+
+    printf("Welcome to \"%s\"\n", organization);
+
+    return 0;
+}
