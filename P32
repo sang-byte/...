@@ -1,0 +1,15 @@
+
+#include <stdio.h>
+
+int main() {
+    char inputChar, nextChar;
+
+    printf("Enter a character: ");
+    scanf(" %c", &inputChar);
+
+    nextChar = inputChar + 1;
+
+    printf("The next character is: %c\n", nextChar);
+
+    return 0;
+}
