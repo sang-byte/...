@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int num, absValue;
+
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    absValue = (num < 0) ? -num : num;
+
+    printf("Absolute value of the integer: %d\n", absValue);
+
+    return 0;
+}
+ 
