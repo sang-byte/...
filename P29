@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+    float num;
+    int result;
+    printf("Enter a floating-point number:");
+    result=(int)(num+5);
+    printf("Nearest integer :%d\n",result);
+    return 0;
+    
+}
