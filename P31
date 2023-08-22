@@ -1,0 +1,15 @@
+
+#include <stdio.h>
+
+int main() {
+    int num1=3;
+    int num2=2;
+    num1 = num1 + num2;
+    num2 = num1 - num2;
+    num1 = num1 - num2;
+
+    printf("first number is: %d\n", num1);
+    printf("second number is: %d\n", num2);
+
+    return 0;
+}
