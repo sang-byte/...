@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    float principal=15000, rate=5, time=6, compoundInterest;
+    
+    compoundInterest = principal * (pow((1 + rate/100), time) - 1);
+
+    printf("Compound Interest: %.2f\n", compoundInterest);
+
+    return 0;
+}
