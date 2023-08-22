@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int a = 5 ,b = 5,c = 10;
+
+    int condition1 = (a > c) && (b > c);
+    int condition2 = (a < c) && (b < c);
+
+    printf("Condition 1 (Both 'a' and 'b' are greater than 'c'): %s\n", condition1 ? "True" : "False");
+    printf("Condition 2 (Both 'a' and 'b' are smaller than 'c'): %s\n", condition2 ? "True" : "False");
+
+    return 0;
+}
