@@ -1,0 +1,43 @@
+#include <stdio.h>
+int main() {
+    int customerId, units;
+    char customerName[50];
+    float charges, totalAmount;
+
+    printf("customer ID: ");
+    scanf("%d", &customerId);
+
+    printf("customer name: ");
+    scanf(" %[^\n]s", customerName);
+
+    printf("units consumed: ");
+    scanf("%d", &units);
+
+    if (units <= 199) {
+        charges = 1.20;
+    } else if (units >= 200 && units < 400) {
+        charges = 1.50;
+    } else if (units >= 400 && units < 600) {
+        charges = 1.80;
+    } else {
+        charges = 2.00;
+    }
+
+    totalAmount = units * charges;
+
+    if (totalAmount > 400) {
+        totalAmount += totalAmount * 0.15;
+    }
+
+    if (totalAmount < 100) {
+        totalAmount = 100;
+    }
+
+    printf("\nElectricity Bill\n");
+    printf("Customer ID: %d\n", customerId);
+    printf("Customer Name: %s\n", customerName);
+    printf("Units Consumed: %d\n", units);
+    printf("Total Amount to Pay: Rs. %.2f\n", totalAmount);
+
+    return 0;
+}
