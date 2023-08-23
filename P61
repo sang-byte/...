@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int x, y;
+
+    printf("Enter the x and y coordinate: ");
+    scanf("%d%d", &x ,&y);
+
+    if (x > 0 && y > 0) {
+        printf("(%d, %d)first quadrant.", x, y);
+    } else if (x < 0 && y > 0) {
+        printf("(%d, %d)second quadrant.", x, y);
+    } else if (x < 0 && y < 0) {
+        printf("(%d, %d)third quadrant.", x, y);
+    } else if (x > 0 && y < 0) {
+        printf("(%d, %d)fourth quadrant.", x, y);
+    } else if (x == 0 && y == 0) {
+        printf("(%d, %d)origin.", x, y);
+    } else if (x == 0) {
+        printf("(%d, %d)y-axis.",x, y);
+    } else {
+        printf("(%d, %d)x-axis.",x,y);
+    }
+return 0;
+}
