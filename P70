@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+
+int main() {
+    char brand1[]="moto";
+    char brand2[]="samsang";
+    char brand3[]="realme";
+    char brand4[]="redmie";
+    char brand5[]="apple";
+    
+    int price1=8000;
+    int price2=25000;
+    int price3=60000;
+    int price4=70000;
+    int price5=100000;
+    
+    int budget_min, budget_max;
+    printf("Enter a minimum budget range:");
+    scanf("%c",& budget_min);
+    printf("Enter a maximum budget range:");
+    scanf("%c",& budget_max);
+    printf("Enter a Brands available in within budget range.\n");
+    if(price1>=budget_min&& price1<=budget_max)
+    {
+        printf("%s",brand1);
+    }
+    else if(price2>=budget_min&&price2<=budget_max){
+        printf("%s",brand2);
+    }
+    else if(price3>=budget_min&& price3<=budget_max){
+        printf("%s",brand3);
+    }
+    else if(price4>=budget_min&&price4<=budget_max){
+        printf("%s",brand4);
+    }
+    else if(price5>=budget_min && price5<=budget_max){
+        printf("%s",brand5);
+    }
+    return 0;
+}
