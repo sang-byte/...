@@ -1,0 +1,42 @@
+#include <stdio.h>
+int main() {
+    int n1, n2, result;
+    char operator;
+
+    printf("First number: ");
+    scanf("%d", &n1);
+
+    printf("operator (+, -, *, /): ");
+    scanf(" %c", &operator);
+
+    printf("second number: ");
+    scanf("%d", &n2);
+
+    switch (operator) {
+        case '+':
+            result = n1 + n2;
+            printf("The sum is: %d\n", result);
+            break;
+        case '-':
+            result = n1 - n2;
+            printf("The difference is: %d\n", result);
+            break;
+        case '*':
+            result = n1 * n2;
+            printf("The product is: %d\n", result);
+            break;
+        case '/':
+            if (n2 != 0) {
+                result = n1 / n2;
+                printf("The quotient is: %d\n", result);
+            } else {
+                printf("Error: Division by zero is not allowed.\n");
+            }
+            break;
+        default:
+            printf("Invalid operator entered!\n");
+            break;
+    }
+
+    return 0;
+}
