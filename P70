@@ -16,10 +16,9 @@ int main() {
     
     int budget_min, budget_max;
     printf("Enter a minimum budget range:");
-    scanf("%c",& budget_min);
+    scanf("%d",& budget_min);
     printf("Enter a maximum budget range:");
-    scanf("%c",& budget_max);
-    printf("Enter a Brands available in within budget range.\n");
+    scanf("%d",& budget_max);
     if(price1>=budget_min&& price1<=budget_max)
     {
         printf("%s",brand1);
