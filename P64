@@ -13,3 +13,5 @@ int main() {
     } else {
         printf("The triangle is scalene.");
     }
+return 0;
+}
