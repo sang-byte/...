@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main() {
+    int n,count=0,num=2;
+    printf("enter the value of n:");
+    scanf("%d",&n);
+    printf("The first %d prime numbers: ", n);
+    while(count<n)
+    {
+        int prime=1;
+        for(int i=2;i<=num/2;i++)
+        {
+            if(num%2==0)
+            prime=0;
+            break;
+            
+        }
+        if (prime)
+        {
+            printf("%d",num);
+            count++;
+        }
+        num++;
+    }
+    return 0;
+}
