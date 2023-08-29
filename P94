@@ -1,0 +1,33 @@
+#include <stdio.h>
+int calculateGCD(int a, int b) {
+    if (b == 0) {
+        return a;
+    } else {
+        return calculateGCD(b, a % b);
+    }
+}
+
+int calculateLCM(int a, int b) {
+    static int lcm = 1;
+    
+    if (lcm % a == 0 && lcm % b == 0) {
+        return lcm;
+    }
+    
+    lcm++;
+    return calculateLCM(a, b);
+}
+
+int main() {
+    int number1, number2;
+    
+    printf("Enter two numbers: ");
+    scanf("%d %d", &number1, &number2);
+    
+    int gcd = calculateGCD(number1, number2);
+    int lcm = calculateLCM(number1, number2);
+    
+    printf("The LCM of %d and %d is: %d\n", number1, number2, lcm);
+    
+    return 0;
+}
