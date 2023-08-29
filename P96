@@ -1,0 +1,9 @@
+#include<stdio.h>
+void hello()
+{
+    printf("Hello");
+}
+void main()
+{
+    hello();
+}
