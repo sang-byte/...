@@ -1,0 +1,18 @@
+#include <stdio.h>
+float calculateSphereVolume(float radius) {
+    float volume = (4.0/3.0) * 3.14159 * radius * radius * radius;
+    return volume;
+}
+
+int main() {
+    float radius;
+    
+    printf("Enter the radius of the sphere: ");
+    scanf("%f", &radius);
+    
+    float volume = calculateSphereVolume(radius);
+    
+    printf("The volume of the sphere is: %.2f\n", volume);
+    
+    return 0;
+}
