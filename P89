@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void printProduct(int integer, float floatingPoint) 
+{
+    float product = integer * floatingPoint;
+    printf("The product is: %f", product);
+}
+
+int main() {
+    int integer; 
+    printf("Enter a integer value:");
+    scanf("%d",&integer);
+    float floatingPoint; 
+    printf("Enter a floating point:");
+    scanf("%f",& floatingPoint);
+    printProduct(integer, floatingPoint);
+
+    return 0;
+}
