@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+void printGreeting(char name[]) {
+    printf("Hello<%s>|!", name);
+}
+
+int main() {
+    char name[100];
+    
+    printf("name: ");
+    scanf("%s", name);
+    
+    printGreeting(name);
+    
+    return 0;
+}
