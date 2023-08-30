@@ -1,0 +1,17 @@
+#include <stdio.h>
+void print_variables(){
+    return print_variables;
+}
+int main() {
+    int a;
+    char b;
+    float c;
+    double d;
+
+    printf("Int: %d\n", a);
+    printf("Char: %c\n", b);
+    printf("Float: %f\n", c);
+    printf("Double: %lf\n", d);
+    print_variables();
+    return 0;
+}
