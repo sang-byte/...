@@ -1,0 +1,34 @@
+#include <stdio.h>
+void count_frequency(int arr[], int size) {
+    int frequency[size];
+    int visited = -1;
+
+    for (int i = 0; i < size; i++) {
+        int count = 1;
+        for (int j = i + 1; j < size; j++) {
+            if (arr[i] == arr[j]) {
+                count++;
+                frequency[j] = visited;
+            }
+        }
+        if (frequency[i] != visited) {
+            frequency[i] = count;
+        }
+    }
+
+    printf("Frequency of each element in the array:\n");
+    for (int i = 0; i < size; i++) {
+        if (frequency[i] != visited) {
+            printf("%d occurs %d time(s)\n", arr[i], frequency[i]);
+        }
+    }
+}
+
+int main() {
+    int arr[] = {1, 2, 3, 2, 1, 3, 4, 5, 4, 4};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    count_frequency(arr, size);
+
+    return 0;
+}
