@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    int arr[] = {1,2,8,10,3,3,5
+    };
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int max = arr[0];
+    int second_max = arr[0];
+
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > max) {
+            second_max = max;
+            max = arr[i];
+        } else if (arr[i] > second_max && arr[i] != max) {
+            second_max = arr[i];
+        }
+    }
+
+    printf("The second largest element in the array is: %d\n", second_max);
+
+    return 0;
+}
