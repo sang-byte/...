@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+    int decimal, binary = 0, remainder, count1 = 0, count0 = 0, base = 1;
+
+    printf("Enter a decimal number: ");
+    scanf("%d", &decimal);
+
+    while (decimal > 0) {
+        remainder = decimal % 2;
+        binary += remainder * base;
+        base *= 10;
+        decimal /= 2;
+
+        if (remainder == 1) {
+            count1++;
+        } else {
+            count0++;
+        }
+    }
+
+    printf("Binary number: %d\n", binary);
+    printf("Number of 1's: %d\n", count1);
+    printf("Number of 0's: %d\n", count0);
+
+    return 0;
+}
