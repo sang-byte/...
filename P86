@@ -1,0 +1,31 @@
+#include <stdio.h>
+int setBit(int num, int n) 
+{
+    return (num | (1 << n));
+}
+int clearBit(int num, int n)
+{
+    return (num & ~(1 << n));
+}
+int toggleBit(int num, int n)
+{
+    return (num ^ (1 << n));
+}
+
+int main() {
+    int num, n;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    printf("Enter the position of the bit (0-indexed): ");
+    scanf("%d", &n);
+
+    printf("Original number: %d\n", num);
+    num = setBit(num, n);
+    printf("Number after setting the %dth bit: %d\n", n, num);
+    num = clearBit(num, n);
+    printf("Number after clearing the %dth bit: %d\n", n, num);
+    num = toggleBit(num, n);
+    printf("Number after toggling the %dth bit: %d\n", n, num);
+
+    return 0;
+}
